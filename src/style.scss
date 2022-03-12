@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+$blueblack: #021c1e;
+$blueblackhover: #06464b;
+$cadetblue: #004445;
+$rain: #2c7873;
+$greenery: #6fb98f;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./components/media/Montserrat.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $rain;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  color: $blueblack;
+}
+
+li {
+  list-style: none;
+}
+
+#banner-container {
+  background-color: $greenery;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+
+#banner-title {
+}
+
+h1 {
+}
+
+#nav-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 400px;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.nav-items {
+}
+
+.nav-button {
+  cursor: pointer;
+
+  &:hover {
+    color: $blueblackhover;
+  }
+}
